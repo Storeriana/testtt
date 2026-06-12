@@ -1,0 +1,198 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Official athiya.scarf — Hijab Instan Daily</title><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"><style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:Inter,sans-serif;background:#ede9e3;min-height:100vh;display:flex;justify-content:center;padding:24px 0}.wrap{width:100%;max-width:520px;background:#fff}@media(max-width:560px){body{padding:0}.wrap{max-width:100%}}</style></head><body><div class="wrap">
+<div style="position:relative;overflow:hidden;line-height:0">
+<div id="c360-t" style="display: flex; transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); cursor: grab; user-select: none; will-change: transform; align-items: flex-start; transform: translateX(0%); height: 420px;"><div class="cs-item" style="min-width: 100%; line-height: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; background: rgb(248, 248, 248); height: 420px;"><img src="https://down-id.img.susercontent.com/file/id-11134207-81ztp-mfc8xqod9a1510.webp" alt="" style="width:100%;height:auto;display:block;-webkit-user-drag:none;pointer-events:none" onerror="this.parentElement.style.background='#eee'" onload="if(typeof resizeCarousel==='function')resizeCarousel()"></div><div class="cs-item" style="min-width:100%;line-height:0;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#f8f8f8"><img src="https://down-id.img.susercontent.com/file/id-11134207-81ztp-mfc8xqod6gw976.webp" alt="" style="width:100%;height:auto;display:block;-webkit-user-drag:none;pointer-events:none" onerror="this.parentElement.style.background='#eee'" onload="if(typeof resizeCarousel==='function')resizeCarousel()"></div><div class="cs-item" style="min-width:100%;line-height:0;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#f8f8f8"><img src="https://down-id.img.susercontent.com/file/id-11134207-81ztc-mfc8xqodaoll27.webp" alt="" style="width:100%;height:auto;display:block;-webkit-user-drag:none;pointer-events:none" onerror="this.parentElement.style.background='#eee'" onload="if(typeof resizeCarousel==='function')resizeCarousel()"></div></div>
+<button id="c360-p" style="position:absolute;left:12px;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.55);color:#fff;border:none;width:38px;height:38px;border-radius:50%;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:9;backdrop-filter:blur(4px)">‹</button>
+<button id="c360-n" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.55);color:#fff;border:none;width:38px;height:38px;border-radius:50%;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:9;backdrop-filter:blur(4px)">›</button>
+<div style="position:absolute;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:5px;z-index:9;line-height:0"><span class="csd-c360" style="display: inline-block; height: 8px; border-radius: 4px; cursor: pointer; transition: 0.3s; background: rgb(238, 77, 45); width: 22px;"></span><span class="csd-c360" style="display:inline-block;height:8px;border-radius:4px;cursor:pointer;transition:all .3s;background:rgba(255,255,255,.4);width:8px"></span><span class="csd-c360" style="display:inline-block;height:8px;border-radius:4px;cursor:pointer;transition:all .3s;background:rgba(255,255,255,.4);width:8px"></span></div>
+<div id="c360-c" style="position:absolute;bottom:8px;right:12px;background:rgba(0,0,0,.6);color:#fff;font-size:11px;padding:3px 9px;border-radius:10px;font-family:Inter,sans-serif;line-height:1.4">1/3</div>
+</div>
+<script>
+(function(){var c=0,t=3,sx=0,dx=0,dr=false;
+var tk=document.getElementById('c360-t');
+var ds=document.querySelectorAll('.csd-c360');
+var ct=document.getElementById('c360-c');
+function go(n){c=(n+t)%t;tk.style.transform='translateX(-'+(c*100)+'%)';ds.forEach(function(d,i){d.style.background=i===c?'#ee4d2d':'rgba(255,255,255,.4)';d.style.width=i===c?'22px':'8px';});if(ct)ct.textContent=(c+1)+'/'+t;}
+document.getElementById('c360-p').onclick=function(){go(c-1);};
+document.getElementById('c360-n').onclick=function(){go(c+1);};
+ds.forEach(function(d,i){d.onclick=function(){go(i);};});
+tk.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;dr=true;},{passive:true});
+tk.addEventListener('touchmove',function(e){if(dr)dx=e.touches[0].clientX-sx;},{passive:true});
+tk.addEventListener('touchend',function(){if(Math.abs(dx)>40)go(dx<0?c+1:c-1);dr=false;dx=0;});
+tk.addEventListener('mousedown',function(e){sx=e.clientX;dr=true;e.preventDefault();});
+document.addEventListener('mousemove',function(e){if(dr)dx=e.clientX-sx;});
+document.addEventListener('mouseup',function(){if(dr&&Math.abs(dx)>40)go(dx<0?c+1:c-1);dr=false;dx=0;});
+go(0);
+// Auto height sesuai dimensi foto
+function syncH(){var items=tk.querySelectorAll('.cs-item');if(!items[c])return;var img=items[c].querySelector('img');if(img&&img.naturalHeight>0){var ratio=img.naturalHeight/img.naturalWidth;var w=tk.offsetWidth||items[c].offsetWidth;if(w>0){var h=w*ratio;tk.style.height=h+'px';items[c].style.height=h+'px';}}
+}
+tk.querySelectorAll('img').forEach(function(img){if(img.complete&&img.naturalWidth>0)syncH();else img.addEventListener('load',syncH);});
+window.addEventListener('resize',function(){syncH();});
+function resizeCarousel(){syncH();}
+})();
+</script><div style="background:#ee4d2d;padding:5px 0;overflow:hidden;margin:0;display:block"><div id="lp-uq-wrap" style="display:flex;white-space:nowrap;animation:lpUQ 6s linear infinite"><span style="display:inline-flex;align-items:center;gap:8px;padding:0 28px;font-size:10px;font-weight:700;color:#fff;font-family:'Inter',sans-serif;letter-spacing:.3px;line-height:1.6"><span style="font-size:12px">⚡</span>Stok terbatas — tersisa 17 pcs</span><span style="display:inline-flex;align-items:center;gap:8px;padding:0 28px;font-size:10px;font-weight:700;color:#fff;font-family:'Inter',sans-serif;letter-spacing:.3px;line-height:1.6"><span style="font-size:12px">⚡</span>Stok terbatas — tersisa 17 pcs</span><span style="display:inline-flex;align-items:center;gap:8px;padding:0 28px;font-size:10px;font-weight:700;color:#fff;font-family:'Inter',sans-serif;letter-spacing:.3px;line-height:1.6"><span style="font-size:12px">⚡</span>Stok terbatas — tersisa 17 pcs</span><span style="display:inline-flex;align-items:center;gap:8px;padding:0 28px;font-size:10px;font-weight:700;color:#fff;font-family:'Inter',sans-serif;letter-spacing:.3px;line-height:1.6"><span style="font-size:12px">⚡</span>Stok terbatas — tersisa 17 pcs</span></div><style id="lp-uq-style">@keyframes lpUQ{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}#lp-uq-wrap{display:flex;white-space:nowrap;animation:lpUQ 6s linear infinite;}</style></div>
+
+<div style="padding:10px 14px 8px;background:#fff;border-bottom:1px solid #f0f0f0">
+  <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:5px"><span style="background:#ee4d2d;color:#fff;font-size:8px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:2px 7px;border-radius:6px;display:inline-block">Instan</span> <span style="background:#ee4d2d;color:#fff;font-size:8px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:2px 7px;border-radius:6px;display:inline-block">Rapi</span> <span style="background:#ee4d2d;color:#fff;font-size:8px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:2px 7px;border-radius:6px;display:inline-block">Cantik</span></div>
+  <div style="font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111;line-height:1.35;margin-bottom:3px">Hijab Instan Daily</div>
+  <div style="font-size:11px;color:#ee4d2d;font-family:'Inter',sans-serif;font-weight:600;margin-bottom:4px">Instan tanpa peniti – langsung pakai</div>
+  <div style="font-size:10px;color:#555;line-height:1.6;font-family:'Inter',sans-serif">Tampil rapi dan cantik setiap hari kini lebih mudah dengan Hijab Instan Daily.
+Dirancang untuk kamu yang aktif dan ingin tetap stylish tanpa ribet, cukup pakai dalam hitungan detik langsung siap beraktivitas!</div>
+  <div id="lp-timer-wrap" style="background:linear-gradient(135deg,#ee4d2d18,#ee4d2d0c);border:1px solid #ee4d2d33;border-radius:8px;padding:7px 10px;margin-top:7px;margin-bottom:1px">
+    <div style="font-size:8px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#ee4d2d;margin-bottom:5px;font-family:'Inter',sans-serif;opacity:.9">Promo Berakhir Dalam</div>
+    <div style="display:flex;gap:5px;align-items:stretch" id="lp-timer-boxes">
+      
+      <div style="flex:1;text-align:center">
+        <div id="lp-th" style="font-size:18px;font-weight:800;color:#111;font-family:'Inter',sans-serif;line-height:1;background:#fff;border-radius:6px;padding:5px 2px;border:1px solid #f0f0f0">00</div>
+        <div style="font-size:7px;color:#aaa;margin-top:3px;font-family:'Inter',sans-serif;font-weight:600;letter-spacing:1px;text-transform:uppercase">Jam</div>
+      </div>
+      <div style="display:flex;align-items:center;font-size:14px;font-weight:800;color:#ee4d2d;padding-bottom:10px">:</div>
+      <div style="flex:1;text-align:center">
+        <div id="lp-tm" style="font-size:18px;font-weight:800;color:#111;font-family:'Inter',sans-serif;line-height:1;background:#fff;border-radius:6px;padding:5px 2px;border:1px solid #f0f0f0">29</div>
+        <div style="font-size:7px;color:#aaa;margin-top:3px;font-family:'Inter',sans-serif;font-weight:600;letter-spacing:1px;text-transform:uppercase">Menit</div>
+      </div>
+      <div style="display:flex;align-items:center;font-size:14px;font-weight:800;color:#ee4d2d;padding-bottom:10px">:</div>
+      <div style="flex:1;text-align:center">
+        <div id="lp-ts" style="font-size:18px;font-weight:800;color:#111;font-family:'Inter',sans-serif;line-height:1;background:#fff;border-radius:6px;padding:5px 2px;border:1px solid #f0f0f0">11</div>
+        <div style="font-size:7px;color:#aaa;margin-top:3px;font-family:'Inter',sans-serif;font-weight:600;letter-spacing:1px;text-transform:uppercase">Detik</div>
+      </div>
+    </div>
+  </div>
+  <script>
+  (function(){
+    if(window.__lpTimerInterval)clearInterval(window.__lpTimerInterval);
+    var d=0,h=0,m=30,s=0;
+    var total=d*86400+h*3600+m*60+s;
+    var deadline=Date.now()+total*1000;
+    function pad(n){return String(n).padStart(2,'0');}
+    function tick(){
+      var left=Math.max(0,Math.floor((deadline-Date.now())/1000));
+      var dd=Math.floor(left/86400),hh=Math.floor((left%86400)/3600),mm=Math.floor((left%3600)/60),ss=left%60;
+      var td=document.getElementById('lp-td'),th=document.getElementById('lp-th'),tm=document.getElementById('lp-tm'),ts=document.getElementById('lp-ts');
+      if(!ts){clearInterval(window.__lpTimerInterval);return;}
+      if(td)td.textContent=pad(dd);
+      if(th)th.textContent=pad(hh);
+      if(tm)tm.textContent=pad(mm);
+      if(ts)ts.textContent=pad(ss);
+      if(left<=0){clearInterval(window.__lpTimerInterval);var w=document.getElementById('lp-timer-wrap');if(w)w.style.opacity='.4';}
+    }
+    tick();
+    window.__lpTimerInterval=setInterval(tick,1000);
+  })();
+  </script>
+  <div style="display:flex;align-items:center;gap:7px;margin-top:8px;padding:7px 9px;background:#fafafa;border-radius:7px;border:1px solid #f0f0f0">
+    <img src="https://down-id.img.susercontent.com/file/id-11134233-7r990-luilfxzc5xk7c7@resize_w80_nl.webp" alt="Official athiya.scarf" style="width:30px;height:30px;border-radius:50%;object-fit:cover;border:2px solid #ee4d2d44;flex-shrink:0" onerror="this.style.display='none'">
+    <div style="flex:1;min-width:0">
+      <div style="font-size:10px;font-weight:700;color:#111;font-family:'Inter',sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Official athiya.scarf</div>
+      <div style="display:flex;align-items:center;gap:3px;margin-top:2px;flex-wrap:wrap">
+        <div style="display:flex;gap:1px">
+          <span style="color:#F59E0B;font-size:10px;line-height:1">★</span><span style="color:#F59E0B;font-size:10px;line-height:1">★</span><span style="color:#F59E0B;font-size:10px;line-height:1">★</span><span style="color:#F59E0B;font-size:10px;line-height:1">★</span><span style="color:#F59E0B;font-size:10px;line-height:1">⯨</span>
+        </div>
+        <span style="font-size:10px;font-weight:700;color:#374151;font-family:'Inter',sans-serif">4.9</span>
+        <span style="font-size:8px;color:#9CA3AF;font-family:'Inter',sans-serif">· 10RB+  terjual</span>
+      </div>
+    </div>
+    <div style="font-size:8px;color:#ee4d2d;font-family:'Inter',sans-serif;font-weight:600;background:#ee4d2d15;padding:2px 6px;border-radius:20px;border:1px solid #ee4d2d33;white-space:nowrap;flex-shrink:0">Kunjungi →</div>
+  </div>
+</div>
+
+<div style="padding:10px 14px;background:#fff;border-bottom:1px solid #f0f0f0">
+  <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:8px">
+    <div>
+      <div style="display:flex;align-items:baseline;gap:7px;flex-wrap:wrap;margin-bottom:4px">
+        <div style="font-size:20px;font-weight:800;color:#ee4d2d;font-family:'Inter',sans-serif;line-height:1">Rp 119.300</div>
+        <div style="font-size:11px;color:#aaa;text-decoration:line-through;font-family:'Inter',sans-serif">Rp 179.000</div>
+        <div style="background:#ee4d2d;color:#fff;font-size:8px;font-weight:800;padding:2px 5px;border-radius:3px">-33%</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:3px;margin-top:6px">
+        <div style="display:flex;align-items:center;gap:7px;font-family:'Inter',sans-serif">
+          <span style="color:#ee4d2d;font-size:11px;font-weight:700;flex-shrink:0">✓</span>
+          <span style="font-size:10px;color:#555">Bahan: Premium Quality</span>
+        </div><div style="display:flex;align-items:center;gap:7px;font-family:'Inter',sans-serif">
+          <span style="color:#ee4d2d;font-size:11px;font-weight:700;flex-shrink:0">✓</span>
+          <span style="font-size:10px;color:#555">Stok: Tersedia</span>
+        </div><div style="display:flex;align-items:center;gap:7px;font-family:'Inter',sans-serif">
+          <span style="color:#ee4d2d;font-size:11px;font-weight:700;flex-shrink:0">✓</span>
+          <span style="font-size:10px;color:#555">Garansi: 100% Original</span>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:right"><div style="font-size:8px;color:#aaa;font-family:'Inter',sans-serif">Hemat</div><div style="font-size:13px;font-weight:800;color:#ee4d2d;font-family:'Inter',sans-serif">33%</div></div>
+  </div>
+</div>
+<div style="padding:12px 14px;background:#fff;border-top:1px solid #f0f0f0"><div style="margin-bottom:0"><div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:7px"><div style="font-size:10px;font-weight:700;color:#1a1a1a;font-family:'Inter',sans-serif">Pilih Ukuran</div><div style="font-size:9px;color:#999;font-family:'Inter',sans-serif" id="sz-sel">— Pilih salah satu</div></div><div style="display:flex;flex-wrap:wrap;gap:5px"><button data-szv="M" onclick="(function(el){var w=el.parentElement;w.querySelectorAll('button').forEach(function(b){b.style.background='#fff';b.style.color='#444';b.style.borderColor='#e0e0e0';b.style.fontWeight='500';});el.style.background='#ee4d2d';el.style.color='#fff';el.style.borderColor='#ee4d2d';el.style.fontWeight='700';var lbl=document.getElementById('sz-sel');if(lbl)lbl.textContent='✓ '+el.getAttribute('data-szv');})(this)" style="min-width:36px;height:32px;padding:0 10px;font-size:10px;font-weight:500;color:#444;background:#fff;border:1.5px solid #e0e0e0;border-radius:6px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s">M</button><button data-szv="L" onclick="(function(el){var w=el.parentElement;w.querySelectorAll('button').forEach(function(b){b.style.background='#fff';b.style.color='#444';b.style.borderColor='#e0e0e0';b.style.fontWeight='500';});el.style.background='#ee4d2d';el.style.color='#fff';el.style.borderColor='#ee4d2d';el.style.fontWeight='700';var lbl=document.getElementById('sz-sel');if(lbl)lbl.textContent='✓ '+el.getAttribute('data-szv');})(this)" style="min-width:36px;height:32px;padding:0 10px;font-size:10px;font-weight:500;color:#444;background:#fff;border:1.5px solid #e0e0e0;border-radius:6px;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s">L</button></div><div style="margin-top:9px;background:#f9f9f9;border-radius:7px;padding:9px 12px;border:1px solid #f0f0f0"><div style="font-size:9px;font-weight:500;color:#1a1a1a;margin-bottom:7px">Panduan Ukuran</div><table style="width:100%;border-collapse:collapse"><tbody><tr style="border-bottom:1px solid #f0f0f0"><td style="padding:4px 7px;font-size:10px;font-weight:400;color:#1a1a1a;white-space:nowrap;width:1%;background:#fff">Size M : panjang depan 65 - panjang belakang 75</td><td style="padding:4px 7px;font-size:10px;color:#555;background:#fff"></td></tr><tr style="border-bottom:1px solid #f0f0f0"><td style="padding:4px 7px;font-size:10px;font-weight:400;color:#1a1a1a;white-space:nowrap;width:1%;background:#fafafa">Size L : panjang depan 70cm - panjang belakan 80cm</td><td style="padding:4px 7px;font-size:10px;color:#555;background:#fafafa"></td></tr></tbody></table></div></div><div style="height:1px;background:#f0f0f0;margin:10px 0"></div><div><div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:7px"><div style="font-size:10px;font-weight:700;color:#1a1a1a;font-family:'Inter',sans-serif">Pilih Warna</div><div style="font-size:9px;color:#999;font-family:'Inter',sans-serif" id="cl-sel">— Pilih salah satu</div></div><div style="display:flex;flex-wrap:wrap;gap:7px;align-items:flex-start"><div class="clcard" data-ci="0" data-name="Hitam" style="cursor:pointer;transition:all .2s;border-radius:8px;padding:5px 8px;display:flex;align-items:center;gap:6px;background:#fafafa;border:1.5px solid #f0f0f0" onclick="(function(el){document.querySelectorAll('.clcard').forEach(function(d){d.style.outline='none';var dt=d.querySelector('.cldot');if(dt)dt.style.boxShadow='0 1px 4px rgba(0,0,0,.15)';});el.style.outline='2.5px solid #ee4d2d';el.style.outlineOffset='3px';var dot=el.querySelector('.cldot');if(dot)dot.style.boxShadow='0 3px 12px #ee4d2d55';var lbl=document.getElementById('cl-sel');if(lbl)lbl.textContent='✓ '+el.getAttribute('data-name');var track=document.querySelector('[id$=-t]');if(track){var imgs=track.querySelectorAll('img');if(imgs.length&gt;0)imgs[0].src='https://down-id.img.susercontent.com/file/id-11134207-81ztn-mfc8xqpouyvj63@resize_w450_nl.webp';}})(this)"><div class="cldot" style="position:relative;flex-shrink:0"><div style="width:22px;height:22px;border-radius:50%;background:#111111;border:2px solid rgba(0,0,0,0.08);box-shadow:0 1px 4px rgba(0,0,0,.15)"></div></div><div style="width:28px;height:28px;border-radius:4px;overflow:hidden;flex-shrink:0;border:1px solid #e8e8e8;background:#fff"><img src="https://down-id.img.susercontent.com/file/id-11134207-81ztn-mfc8xqpouyvj63@resize_w450_nl.webp" alt="Hitam" style="width:100%;height:100%;object-fit:contain;display:block"></div><div style="min-width:0"><div style="font-size:10px;font-weight:600;color:#1a1a1a;font-family:'Inter',sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:70px">Hitam</div></div></div><div class="clcard" data-ci="1" data-name="Putih" style="cursor:pointer;transition:all .2s;border-radius:8px;padding:5px 8px;display:flex;align-items:center;gap:6px;background:#fafafa;border:1.5px solid #f0f0f0" onclick="(function(el){document.querySelectorAll('.clcard').forEach(function(d){d.style.outline='none';var dt=d.querySelector('.cldot');if(dt)dt.style.boxShadow='0 1px 4px rgba(0,0,0,.15)';});el.style.outline='2.5px solid #ee4d2d';el.style.outlineOffset='3px';var dot=el.querySelector('.cldot');if(dot)dot.style.boxShadow='0 3px 12px #ee4d2d55';var lbl=document.getElementById('cl-sel');if(lbl)lbl.textContent='✓ '+el.getAttribute('data-name');var track=document.querySelector('[id$=-t]');if(track){var imgs=track.querySelectorAll('img');if(imgs.length&gt;0)imgs[0].src='https://down-id.img.susercontent.com/file/id-11134207-81ztd-mfc8xqpowdfz89@resize_w450_nl.webp';}})(this)"><div class="cldot" style="position:relative;flex-shrink:0"><div style="width:22px;height:22px;border-radius:50%;background:#FFFFFF;border:2px solid rgba(0,0,0,0.15);box-shadow:0 1px 4px rgba(0,0,0,.15)"></div></div><div style="width:28px;height:28px;border-radius:4px;overflow:hidden;flex-shrink:0;border:1px solid #e8e8e8;background:#fff"><img src="https://down-id.img.susercontent.com/file/id-11134207-81ztd-mfc8xqpowdfz89@resize_w450_nl.webp" alt="Putih" style="width:100%;height:100%;object-fit:contain;display:block"></div><div style="min-width:0"><div style="font-size:10px;font-weight:600;color:#1a1a1a;font-family:'Inter',sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:70px">Putih</div></div></div><div class="clcard" data-ci="2" data-name="Mustard" style="cursor:pointer;transition:all .2s;border-radius:8px;padding:5px 8px;display:flex;align-items:center;gap:6px;background:#fafafa;border:1.5px solid #f0f0f0" onclick="(function(el){document.querySelectorAll('.clcard').forEach(function(d){d.style.outline='none';var dt=d.querySelector('.cldot');if(dt)dt.style.boxShadow='0 1px 4px rgba(0,0,0,.15)';});el.style.outline='2.5px solid #ee4d2d';el.style.outlineOffset='3px';var dot=el.querySelector('.cldot');if(dot)dot.style.boxShadow='0 3px 12px #ee4d2d55';var lbl=document.getElementById('cl-sel');if(lbl)lbl.textContent='✓ '+el.getAttribute('data-name');var track=document.querySelector('[id$=-t]');if(track){var imgs=track.querySelectorAll('img');if(imgs.length&gt;0)imgs[0].src='https://down-id.img.susercontent.com/file/id-11134207-81ztp-mfc8xqpoxs0fdd@resize_w450_nl.webp';}})(this)"><div class="cldot" style="position:relative;flex-shrink:0"><div style="width:22px;height:22px;border-radius:50%;background:#be7b2d;border:2px solid rgba(0,0,0,0.08);box-shadow:0 1px 4px rgba(0,0,0,.15)"></div></div><div style="width:28px;height:28px;border-radius:4px;overflow:hidden;flex-shrink:0;border:1px solid #e8e8e8;background:#fff"><img src="https://down-id.img.susercontent.com/file/id-11134207-81ztp-mfc8xqpoxs0fdd@resize_w450_nl.webp" alt="Mustard" style="width:100%;height:100%;object-fit:contain;display:block"></div><div style="min-width:0"><div style="font-size:10px;font-weight:600;color:#1a1a1a;font-family:'Inter',sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:70px">Mustard</div></div></div></div></div></div>
+
+<div style="padding:10px 14px;background:#fafafa;border-bottom:1px solid #f0f0f0">
+  <div style="font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#aaa;margin-bottom:7px;font-family:'Inter',sans-serif">Keunggulan</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:5px">
+    <div style="background:#fff;border-radius:6px;padding:8px;display:flex;align-items:center;gap:7px;border:1px solid #f0f0f0">
+      <div style="font-size:16px;flex-shrink:0">🌿</div>
+      <div>
+        <div style="font-size:9px;font-weight:700;color:#111;font-family:'Inter',sans-serif;line-height:1.3">Bahan Premium</div>
+        <div style="font-size:8px;color:#aaa;font-family:'Inter',sans-serif;margin-top:1px">Kualitas terjamin</div>
+      </div>
+    </div><div style="background:#fff;border-radius:6px;padding:8px;display:flex;align-items:center;gap:7px;border:1px solid #f0f0f0">
+      <div style="font-size:16px;flex-shrink:0">🤍</div>
+      <div>
+        <div style="font-size:9px;font-weight:700;color:#111;font-family:'Inter',sans-serif;line-height:1.3">Lembut &amp; Nyaman</div>
+        <div style="font-size:8px;color:#aaa;font-family:'Inter',sans-serif;margin-top:1px">Cocok dipakai lama</div>
+      </div>
+    </div><div style="background:#fff;border-radius:6px;padding:8px;display:flex;align-items:center;gap:7px;border:1px solid #f0f0f0">
+      <div style="font-size:16px;flex-shrink:0">✅</div>
+      <div>
+        <div style="font-size:9px;font-weight:700;color:#111;font-family:'Inter',sans-serif;line-height:1.3">Berkualitas</div>
+        <div style="font-size:8px;color:#aaa;font-family:'Inter',sans-serif;margin-top:1px">Pilihan terbaik</div>
+      </div>
+    </div><div style="background:#fff;border-radius:6px;padding:8px;display:flex;align-items:center;gap:7px;border:1px solid #f0f0f0">
+      <div style="font-size:16px;flex-shrink:0">⏱️</div>
+      <div>
+        <div style="font-size:9px;font-weight:700;color:#111;font-family:'Inter',sans-serif;line-height:1.3">Praktis</div>
+        <div style="font-size:8px;color:#aaa;font-family:'Inter',sans-serif;margin-top:1px">Hemat waktu</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="background:#fff;padding:10px 14px 2px;border-bottom:0px">
+  <div style="font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#aaa;font-family:'Inter',sans-serif">DETAIL PRODUK</div>
+</div>
+
+<div style="background:#fff;border-bottom:1px solid #f0f0f0">
+  <div style="background:#f8f8f8;line-height:0;overflow:hidden">
+    <img src="https://cdn.orderonline.id/uploads/images_6441391762074131763.png" alt="foto 1" style="width:100%;height:auto;display:block;object-fit:fill" onerror="this.style.display='none'">
+  </div>
+  <div style="padding:10px 14px">
+    <div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:8px;padding-bottom:8px;border-bottom:1px solid #f0f0f0">
+      <span style="font-size:15px;flex-shrink:0;margin-top:1px">✨</span>
+      <span style="font-size:11px;color:#555;line-height:1.65;font-family:'Inter',sans-serif">Tekstur lembut, sejuk, dan tidak menerawang yang menjamin kenyamanan maksimal tanpa rasa gerah seharian.</span>
+    </div>
+  </div>
+</div>
+<div style="background:#fff;border-bottom:1px solid #f0f0f0">
+  <div style="background:#f8f8f8;line-height:0;overflow:hidden">
+    <img src="https://cdn.orderonline.id/uploads/images_7380941762074130743.png" alt="foto 2" style="width:100%;height:auto;display:block;object-fit:fill" onerror="this.style.display='none'">
+  </div>
+  <div style="padding:10px 14px">
+    <div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:8px;padding-bottom:8px;border-bottom:1px solid #f0f0f0">
+      <span style="font-size:15px;flex-shrink:0;margin-top:1px">✅</span>
+      <span style="font-size:11px;color:#555;line-height:1.65;font-family:'Inter',sans-serif">Desain praktis langsung pakai yang ironless, solusi tepat tampil rapi dan menawan dalam hitungan detik.</span>
+    </div>
+  </div>
+</div>
+<div style="background:#fff;border-bottom:1px solid #f0f0f0">
+  <div style="background:#f8f8f8;line-height:0;overflow:hidden">
+    <img src="https://cdn.orderonline.id/uploads/images_9347211762074131888.png" alt="foto 3" style="width:100%;height:auto;display:block;object-fit:fill" onerror="this.style.display='none'">
+  </div>
+  <div style="padding:10px 14px">
+    <div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:8px;padding-bottom:8px;border-bottom:1px solid #f0f0f0">
+      <span style="font-size:15px;flex-shrink:0;margin-top:1px">✨</span>
+      <span style="font-size:11px;color:#555;line-height:1.65;font-family:'Inter',sans-serif">Ukuran L yang dirancang khusus untuk menutup dada dengan anggun, menghadirkan rasa aman dan santun.</span>
+    </div>
+  </div>
+</div>
+
+<div style="padding:12px;background:#fafafa;border-bottom:1px solid #f0f0f0">
+  <div style="font-size:12px;font-weight:700;color:#111;margin-bottom:3px;font-family:'Inter',sans-serif">Pesan Sekarang</div>
+  <div style="font-size:10px;color:#aaa;margin-bottom:10px;font-family:'Inter',sans-serif">Isi form di bawah, kami proses dalam 1x24 jam</div>
+  <!-- OrderOnline Embed Code - v8.0.2 --> <div class="ooef"> <form class="orderonline-embed-form" data-username="rara" data-product-slug="handheld-partitioned-cosmetic-bag3566" data-product-id="6a2af77239054ef46f0abda7" id="oo-embed-form-handheld-partitioned-cosmetic-bag3566-3668" data-origin="orderonline"> <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div> </form> </div> <script> if (typeof xLogError != 'function') { var xLogError = function (error) { var req = new XMLHttpRequest(); var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack }); var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error'; req.open('POST', 'https://api.orderonline.id/log', true); req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); req.send(params); }; } try { if (typeof xEmbedScript != 'function') { var xEmbedScript = function () { !function(w, d, e, v, id, t, s) { if (d.getElementById(id)) return; t = d.createElement(e);t.async = !0;t.src = v;t.id = id; s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.2', 'oo-embed-js'); }; } if (typeof xEmbedInit != 'function') { var xEmbedInit = function (w, n) { if (w.ooe) return; n = w.ooe = function() { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!w._ooe) w._ooe = n; n.push = n;n.loaded = !0;n.version = '8.0.2';n.queue = []; }; } xEmbedInit(window); ooe('setup', 'redirect', 'https://rara.orderonline.id'); ooe('init', '5f12ee789d8e8e5e870172ee', '6a2af77239054ef46f0abda7', '6a2af77239054ef46f0abda8', 'oo-embed-form-handheld-partitioned-cosmetic-bag3566-3668', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false}); if (!window.jQuery) { !function(w, d, e, v, id, t, s) { if (d.getElementById(id)) return; t = d.createElement(e);t.async = !0;t.src = v;t.id = id; t.addEventListener('load', xEmbedScript); s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery'); } else { xEmbedScript(); } } catch (e) { xLogError(e); throw e; } </script> <!-- End OrderOnline Embed Code -->
+
+</div><script>(function(){document.querySelectorAll(".wrap script").forEach(function(o){var n=document.createElement("script");Array.from(o.attributes).forEach(function(a){n.setAttribute(a.name,a.value);});n.textContent=o.textContent;if(o.parentNode)o.parentNode.replaceChild(n,o);});})();</script></body></html>
